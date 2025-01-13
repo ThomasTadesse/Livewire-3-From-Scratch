@@ -1,8 +1,4 @@
 <div>
-    <div>
-        <!-- here we place the name from the Greeter.php -->
-    Hello, {{ $name }}!
-    </div>
     <!-- input property is bound to the input value, so blank here is fine -->
     <form 
         wire:submit="changeName()"
@@ -45,4 +41,10 @@
         </button>
     </div>
     </form>
+    @if ($name =! '')
+    <div>
+        <!-- here we place the greeting and name from the Greeter.php -->
+    {{ $greeting }}, {{ $name }}!
+    </div>
+    @endif
 </div>
