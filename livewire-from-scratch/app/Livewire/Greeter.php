@@ -14,9 +14,9 @@ class Greeter extends Component
     // keep in mind, if it is private you will encounter an error
 
     // lets make an action to change the name
-    public function changeName()
+    public function changeName($newName)
     {
-        $this->name = "John";
+        $this->name = $newName;
     }
 
 
