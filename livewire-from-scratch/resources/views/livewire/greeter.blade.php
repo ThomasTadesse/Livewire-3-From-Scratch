@@ -11,13 +11,13 @@
         <select 
             type="text" 
             class="p-4 border rounded-md bg-gray-700 text-white"
-            wire:model="greeting"
+            wire:model.fill="greeting"
     >
-
+<!-- by adding fill you will automatically get the first option by default -->
         <option value="hello">Hello</option>
         <option value="hi">Hi</option>
         <option value="hey">Hey</option>
-        
+
 
     </select>
     <input 
