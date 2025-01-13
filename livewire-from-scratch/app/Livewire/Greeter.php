@@ -7,16 +7,17 @@ use Livewire\Component;
 class Greeter extends Component
 {
 
-    // make a public property such as name, in this case "World"
-    // and add it later to the view
-    public $name = 'World';
+    // make a public property such as name
+    // and add that variable later to the view
+    public $name = '';
+    public $greeting = '';
 
     // keep in mind, if it is private you will encounter an error
 
     // lets make an action to change the name
-    public function changeName($newName)
+    public function changeName()
     {
-        $this->name = $newName;
+
     }
 
 
