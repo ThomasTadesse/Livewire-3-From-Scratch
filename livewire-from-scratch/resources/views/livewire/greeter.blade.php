@@ -9,7 +9,6 @@
     
     >
     <div class="mt-2">
-        <!-- enter name in changeName() to change the name to that value on click -->
         <input 
         id = "newName"
         type="text" 
@@ -22,7 +21,6 @@
 
 
     <div class="mt-2">
-        <!-- enter name in changeName() to change the name to that value on click -->
         <button type="submit"
                 class="text-white font-medium rounded-md px-4 py-2 bg-blue-600"
         >
