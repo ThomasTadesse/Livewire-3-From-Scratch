@@ -13,6 +13,13 @@ class Greeter extends Component
 
     // keep in mind, if it is private you will encounter an error
 
+    // lets make an action to change the name
+    public function changeName($name)
+    {
+        $this->name = "John Doe";
+    }
+
+
     public function render()
     {
         return view('livewire.greeter');
