@@ -9,7 +9,7 @@ class Greeter extends Component
 
     // make a public property such as name, in this case "World"
     // and add it later to the view
-    public $name = 'World';
+    public $name = '';
 
     // keep in mind, if it is private you will encounter an error
 
