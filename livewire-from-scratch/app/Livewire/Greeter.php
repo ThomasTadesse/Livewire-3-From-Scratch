@@ -7,8 +7,8 @@ use Livewire\Component;
 class Greeter extends Component
 {
 
-    // make a public property such as name, in this case "World"
-    // and add it later to the view
+    // make a public property such as name
+    // and add that variable later to the view
     public $name = '';
     public $greeting = '';
 

@@ -2,8 +2,6 @@
     <!-- input property is bound to the input value, so blank here is fine -->
     <form 
         wire:submit="changeName()"
-
-    
     >
     <div class="mt-2">
         <!-- by placing the model here for name, it could be used easier -->
@@ -13,20 +11,19 @@
         <select 
             type="text" 
             class="p-4 border rounded-md bg-gray-700 text-white"
-            placeholder="Enter new name"
-            wire:model.live="name"
-        
+            wire:model="greeting"
     >
-        <option value="John">hello</option>
-        <option value="Doe">welcome, mr.</option>
-        <option value="Jane">heya</option>
-        <option value="Smith">welcome, mrs.</option>
+
+        <option value="hello">Hello</option>
+        <option value="hi">Hi</option>
+        <option value="hey">Hey</option>
+        
+
     </select>
     <input 
             type="text" 
             class="p-4 border rounded-md bg-gray-700 text-white"
-            placeholder="Enter new name"
-            wire:model.live.debounce.1000ms="name"
+            wire:model="name"
         
     >
      
@@ -41,10 +38,10 @@
         </button>
     </div>
     </form>
-    @if ($name =! '')
+    @if ($name != '')
     <div>
         <!-- here we place the greeting and name from the Greeter.php -->
-    {{ $greeting }}, {{ $name }}!
+        {{ $greeting }}, {{ $name }}!
     </div>
     @endif
 </div>
